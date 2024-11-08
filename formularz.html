@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Zatrudnienia</title>
+</head>
+<body>
+    <h2>Formularz dla zatrudnienia do pracy do firmy "Dyintrance"</h2>
+
+    <form>
+        <fieldset>
+            <legend>Dane osobowe</legend>
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie"><br><br>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko"><br><br>
+
+            <label for="urodzenie">Data urodzenia:</label>
+            <input type="date" id="urodzenie" name="urodzenie"><br><br>
+
+            <label for="adres">Adres zamieszkania:</label>
+            <input type="text" id="adres" name="adres"><br><br>
+
+            <label for="wiek">Wiek:</label>
+            <input type="number" id="wiek" name="wiek"><br><br>
+
+            <label for="telefon">Numer telefonu:</label>
+            <input type="tel" id="telefon" name="telefon"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Pozostałe informacje</legend>
+            <label for="wyksztalcenie">Wykształcenie:</label><br>
+            <input type="radio" id="podstawowe" name="wyksztalcenie" value="podstawowe">
+            <label for="podstawowe">Podstawowe</label><br>
+            <input type="radio" id="srednie" name="wyksztalcenie" value="srednie">
+            <label for="srednie">Średnie</label><br>
+            <input type="radio" id="wyzsze" name="wyksztalcenie" value="wyzsze">
+            <label for="wyzsze">Wyższe</label><br><br>
+
+            <label for="zawod">Zawód wyuczony:</label>
+            <input type="text" id="zawod" name="zawod"><br><br>
+
+            <label for="umiejetnosci">Dodatkowe umiejętności:</label><br>
+            <textarea id="umiejetnosci" name="umiejetnosci" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Stanowisko, na które aplikujesz</legend>
+            <input type="checkbox" id="pracownik_biurowy" name="stanowisko" value="pracownik_biurowy">
+            <label for="pracownik_biurowy">Pracownik biurowy</label><br>
+
+            <input type="checkbox" id="specjalista_it" name="stanowisko" value="specjalista_it">
+            <label for="specjalista_it">Specjalista IT</label><br>
+
+            <input type="checkbox" id="marketingowiec" name="stanowisko" value="marketingowiec">
+            <label for="marketingowiec">Marketingowiec</label><br>
+
+            <input type="checkbox" id="inne" name="stanowisko" value="inne">
+            <label for="inne">Inne:</label>
+            <input type="text" id="inne_opis" name="inne_opis">
+        </fieldset>
+
+        <fieldset>
+            <legend>Doświadczenie zawodowe</legend>
+            <label for="firma1">Firma 1:</label>
+            <input type="text" id="firma1" name="firma1"><br><br>
+
+            <label for="stanowisko1">Stanowisko:</label>
+            <input type="text" id="stanowisko1" name="stanowisko1"><br><br>
+
+            <label for="okres1">Okres pracy:</label>
+            <input type="text" id="okres1" name="okres1"><br><br>
+
+            <label for="firma2">Firma 2:</label>
+            <input type="text" id="firma2" name="firma2"><br><br>
+
+            <label for="stanowisko2">Stanowisko:</label>
+            <input type="text" id="stanowisko2" name="stanowisko2"><br><br>
+
+            <label for="okres2">Okres pracy:</label>
+            <input type="text" id="okres2" name="okres2">
+        </fieldset>
+
+        <fieldset>
+            <legend>Znajomość języków obcych</legend>
+            <input type="checkbox" id="angielski" name="jezyk" value="angielski">
+            <label for="angielski">Angielski</label><br>
+
+            <input type="checkbox" id="niemiecki" name="jezyk" value="niemiecki">
+            <label for="niemiecki">Niemiecki</label><br>
+
+            <input type="checkbox" id="inne_jezyki" name="jezyk" value="inne_jezyki">
+            <label for="inne_jezyki">Inne:</label>
+            <input type="text" id="inne_jezyki_opis" name="inne_jezyki_opis">
+        </fieldset>
+
+        <fieldset>
+            <legend>Czy posiada Pan/Pani prawo jazdy?</legend>
+            <input type="radio" id="tak" name="prawojazdy" value="tak">
+            <label for="tak">Tak</label><br>
+
+            <input type="radio" id="nie" name="prawojazdy" value="nie">
+            <label for="nie">Nie</label>
+        </fieldset>
+
+        <br><br>
+        <label for="podpis">Podpis:</label>
+        <input type="text" id="podpis" name="podpis">
+
+        <br><br>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
